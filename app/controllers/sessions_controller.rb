@@ -21,9 +21,9 @@ class SessionsController < ApplicationController
 
   private
 
-  def flash_login(user)
-    flash[:success] = "Logged in as #{user.first_name}"
-  end
+  #def flash_login(user)
+  #  flash[:success] = "Logged in as #{user.first_name}"
+  #end
 
   def set_session(user)
     session[:user_id] = user.id
